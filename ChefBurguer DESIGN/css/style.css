@@ -1,0 +1,134 @@
+ 
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    margin-top: 80px;
+}
+
+h1{
+
+    color:rgb(0, 0, 0);
+}
+
+::selection{
+    color: #fff;
+    background: #000000;
+}
+
+.ini{
+    width: 100%;
+    padding: 50px 30px 139px 30px;
+    background: #24cf96;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.ini header{
+    -size: 35px;
+    font-weight: 600;
+}
+
+.ini form{
+    margin: 40px 0;
+}
+
+form .field{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+
+form .field .log{
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+form input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    background-color: #353232;
+    caret-color: #fafafa;
+    border-radius:50px;
+    transition: all 0.2s ease;
+}
+
+
+
+form .field.shake input, form .field.error input{
+    border-color: #FF0000;
+}
+
+
+
+
+.log .error-icon{
+    right: 15px;
+    color: #FF0000;
+}
+
+form input:focus ~ .icon, form .field.valid .icon{
+    color: #0fdb5d;
+}
+
+form .field.shake input:focus ~ .icon, form .field.error input:focus ~ .icon{
+    color: #fff;
+}
+
+
+form .field .error-txt{
+    color: #FF0000;
+    text-align: left;
+    margin-top: 5px;
+}
+
+form .field .error{
+    display: none;
+}
+
+form .field.shake .error, form .field.error .error{
+    display: block;
+}
+
+form .senha-txt{
+    text-align: left;
+    margin-top: -10px;
+}
+
+.ini a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.ini a:hover{
+    text-decoration: underline;
+}
+
+form input[type="submit"]{
+    height: 50px;
+    margin-top: 30px;
+    color: #24cf96;
+    padding: 0;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+    background: #08db8a;
+}
